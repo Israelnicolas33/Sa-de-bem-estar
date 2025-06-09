@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saúde e Bem-estar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1506784983877-45594efa4cbe');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #fff;
+    }
+    header {
+      background-color: rgba(0, 100, 0, 0.8);
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    nav {
+      background-color: rgba(0, 80, 0, 0.9);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav button {
+      background: none;
+      border: none;
+      color: white;
+      padding: 15px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    section {
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.6);
+      margin: 10px;
+      border-radius: 15px;
+    }
+    h2 {
+      color: #aaffaa;
+    }
+    .checklist li {
+      list-style: none;
+      margin: 5px 0;
+    }
+    .checklist li::before {
+      content: "\2705 ";
+    }
+    .btn-action, .btn-share {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1em;
+      border-radius: 10px;
+      margin: 10px 5px;
+      cursor: pointer;
+    }
+    .feedback {
+      margin-top: 20px;
+    }
+    .feedback input, .feedback textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 10px;
+      border: none;
+    }
+    .video-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    @media(min-width: 600px) {
+      .video-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .video h3 {
+      margin-bottom: 8px;
+      color: #00ff99;
+    }
+    iframe {
+      width: 100%;
+      height: 200px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>Saúde e Bem-estar 🌿</header>
+  <nav>
+    <button onclick="scrollToSection('treino')">Treino</button>
+    <button onclick="scrollToSection('dicas')">Dicas</button>
+    <button onclick="scrollToSection('dietas')">Dietas</button>
+    <button onclick="scrollToSection('rotina')">Fugir da Rotina</button>
+    <button onclick="scrollToSection('ajuda')">Ajuda</button>
+    <button onclick="scrollToSection('autoajuda')">Autoajuda</button>
+    <button onclick="scrollToSection('grupo')">Entrar no Grupo</button>
+  </nav>
+
+  <section id="treino">
+    <h2>Treino do Dia 💪</h2>
+    <ul class="checklist">
+      <li>15 minutos de alongamento</li>
+      <li>3 séries de 10 agachamentos</li>
+      <li>3 séries de 15 abdominais</li>
+      <li>20 minutos de caminhada ou corrida leve</li>
+    </ul>
+    <div class="video-grid">
+      <div class="video">
+        <h3>Alongamento</h3>
+        <iframe src="https://www.youtube.com/embed/itJE4neqDJw" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <h3>Agachamento</h3>
+        <iframe src="https://www.youtube.com/embed/xqvCmoLULNY" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <h3>Abdominal</h3>
+        <iframe src="https://www.youtube.com/embed/1f8yoFFdkcY" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <h3>Caminhada</h3>
+        <iframe src="https://www.youtube.com/embed/pFvDf1dHoXo" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="dicas">
+    <h2>Dicas Rápidas 🍃</h2>
+    <ul class="checklist">
+      <li>Tomar chá verde após o almoço</li>
+      <li>Desconectar-se das telas antes de dormir</li>
+      <li>Inspirar profundamente 3 vezes antes de uma decisão importante</li>
+    </ul>
+  </section>
+
+  <section id="dietas">
+    <h2>Dietas e Nutrição 🥗</h2>
+    <ul class="checklist">
+      <li>Evitar alimentos ultraprocessados</li>
+      <li>Comer frutas e vegetais diariamente</li>
+      <li>Beber 2 litros de água</li>
+    </ul>
+  </section>
+
+  <section id="rotina">
+    <h2>Fugir da Rotina ✈️</h2>
+    <p>Ideias para relaxar e renovar as energias:</p>
+    <ul class="checklist">
+      <li>Faça uma caminhada em um parque novo</li>
+      <li>Leia um livro diferente</li>
+      <li>Assista a um documentário inspirador</li>
+    </ul>
+  </section>
+
+  <section id="ajuda">
+    <h2>Precisa de Ajuda? 🤝</h2>
+    <p>Fale com um profissional ou busque apoio quando precisar. Você não está sozinho.</p>
+  </section>
+
+  <section id="autoajuda">
+    <h2>Autoajuda e Motivação 📚</h2>
+    <ul class="checklist">
+      <li>Anote 3 coisas boas do seu dia antes de dormir</li>
+      <li>Leia afirmações positivas ao acordar</li>
+      <li>Ouça podcasts motivacionais</li>
+    </ul>
+  </section>
+
+  <section id="grupo">
+    <h2>Junte-se ao nosso grupo 💬</h2>
+    <p>Entre no nosso grupo e tenha acesso a vídeos e dicas exclusivas.</p>
+    <a class="btn-action" href="https://youtu.be/en3_oerto9c?si=dMwoF3F_SbVhR2s5" target="_blank">Entrar no Grupo</a>
+  </section>
+
+  <section class="feedback">
+    <h2>Deixe seu Feedback 💌</h2>
+    <input type="text" placeholder="Seu nome">
+    <textarea rows="4" placeholder="Sua mensagem..."></textarea>
+    <button class="btn-action">Enviar</button>
+    <button class="btn-share" onclick="shareSite()">🔗 Compartilhar</button>
+  </section>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function shareSite() {
+      if (navigator.share) {
+        navigator.share({
+          title: 'Saúde e Bem-estar',
+          text: 'Confira este site incrível de bem-estar!',
+          url: window.location.href
+        });
+      } else {
+        alert('Compartilhamento não suportado neste navegador.');
+      }
+    }
+  </script>
+</body>
+</html>
